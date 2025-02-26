@@ -1,0 +1,57 @@
+/* SETUP INIZIALE */
+:root{
+    --bgColor: rgb(18,33,5);
+    --titleColor: rgb(234, 234, 226);
+    --parColor: rgba(234, 234, 226, 0.59);
+    --accColor: rgb(247,206,175);
+}
+
+.bgColor1{
+    background-color: var(--bgColor);
+}
+.titleColor{
+    color: var(--titleColor);
+}
+
+.parColor{
+    color: var(--parColor);
+}
+
+.accColor{
+    color: var(--accColor);
+}
+
+.titleFont{
+    font-family: Mulish, sans-serif;
+}
+
+.textFont{
+    font-family: Quicksand, sans-serif;
+}
+/* FINE SETUP INIZIALE */
+
+
+.bg1{
+    background: linear-gradient(180deg, rgba(36, 62, 12, 0.3), rgba(18, 33, 5, 1)),  url(./media/tealeaves.bg.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.h1Style{
+    font-family: mulish, sans-serif;
+    color: rgb(234, 234, 226);
+    font-size: 14vh;
+    letter-spacing: 1vw;
+    margin: 0px 0px 150px 0px;
+}
+
+.navLinkCustom{
+    text-decoration: none;
+    padding: 1vw;
+
+}
+
+.dropdownBg{
+    background: linear-gradient(180deg, var(--bgColor), var(--bgColor));
+}
