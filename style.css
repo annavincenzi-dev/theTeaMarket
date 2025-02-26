@@ -56,7 +56,7 @@
     background: linear-gradient(180deg, var(--bgColor), var(--bgColor));
 }
 
-.titleContainer{
+.sectionContainer{
     height: 70vh;
     width: 100%;
 }
@@ -73,5 +73,42 @@
 
 .cardTxtStyle{
     font-size: 2vh;
+}
+
+.listItemStyle{
+    list-style: none;
+}
+
+.footerWrap{
+    height: 30vh;
+    background: linear-gradient(180deg, var(--bgColor), rgba(18, 33, 5, 0.6)), url(./media/footerImg.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.formCustom{
+    background-color: rgba(18, 33, 5, 0.42);
+    width: 60%;
+    height: 6vh;
+    border: solid 1px var(--accColor);
+    padding-left: 10px;
+    border-radius: 5%;
+    font-family: Quicksand;
+    font-weight: 300;
+    font-size: 2vh;
+    color: var(--accColor);
+}
+
+.formCustom::placeholder{
+    font-family: Quicksand;
+    font-weight: 300;
+    font-size: 2vh;
+    color: var(--accColor);
+    opacity: 40%;
+}
+
+.footerTitleStyle{
+    font-size: 3vh;
 }
 
