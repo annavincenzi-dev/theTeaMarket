@@ -9,6 +9,7 @@
 .bgColor1{
     background-color: var(--bgColor);
 }
+
 .titleColor{
     color: var(--titleColor);
 }
@@ -28,6 +29,10 @@
 .textFont{
     font-family: Quicksand, sans-serif;
 }
+
+.transition{
+    transition: 0.7s;
+}
 /* FINE SETUP INIZIALE */
 
 
@@ -41,19 +46,35 @@
 .h1Style{
     font-family: mulish, sans-serif;
     color: rgb(234, 234, 226);
-    font-size: 14vh;
+    font-size: 15vh;
     letter-spacing: 1vw;
     margin: 0px 0px 150px 0px;
 }
 
 .navLinkCustom{
     text-decoration: none;
-    padding: 1vw;
+    padding: 2vw 2vw;
 
 }
 
-.dropdownBg{
+.navbar{
+    border-bottom: 1px solid rgba(247, 206, 175, 0.381);
+    width: 40%;
+    top:2vh;
+}
+
+.navLinkCustom:hover{
+    color: var(--titleColor);
+}
+
+.dropdown-menu{
     background: linear-gradient(180deg, var(--bgColor), var(--bgColor));
+}
+
+.navScrolled{
+    backdrop-filter: blur(5px);
+    border : 1px solid var(--accColor);
+    border-radius: 5px;
 }
 
 .sectionContainer{
@@ -62,7 +83,7 @@
 }
 
 .title2Style{
-    font-size: 9vh;
+    font-size: 11vh;
     margin-left: 2vw;
 }
 
@@ -71,9 +92,15 @@
     margin-left: 2vw;
 }
 
+.leafImgSize{
+    width: 20vw;
+}
+
 .cardTxtStyle{
     font-size: 2vh;
 }
+
+
 
 .listItemStyle{
     list-style: none;
@@ -93,7 +120,7 @@
     height: 6vh;
     border: solid 1px var(--accColor);
     padding-left: 10px;
-    border-radius: 5%;
+    border-radius: 5px;
     font-family: Quicksand;
     font-weight: 300;
     font-size: 2vh;
@@ -112,3 +139,18 @@
     font-size: 3vh;
 }
 
+.btnStyle{
+    background-color: rgba(18, 33, 5, 0.42);
+    border: solid 1px var(--accColor);
+    border-radius: 5px;
+    padding: 1vh 2vh;
+    font-size: 1.8vh;
+    font-weight: 600;
+}
+
+.btnStyle:hover{
+    background-color: var(--accColor);
+    border: solid 1px rgba(18, 33, 5, 0.42);
+    color: rgb(18, 33, 5);
+    
+}
