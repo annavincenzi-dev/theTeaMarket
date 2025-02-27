@@ -1,4 +1,5 @@
 let navWrap = document.querySelector("#navWrap")
+let navDropdown = document.querySelector(".dropdown-menu")
 
 
 
@@ -14,12 +15,13 @@ window.addEventListener("scroll", ()=>{
 //NAVBAR CHE INTERAGISCE ALLO SCROLL E SPARISCE AL FOOTER
 window.addEventListener("scroll", ()=>{
     console.log(window.scrollY)
-    if(window.scrollY > 700 && window.scrollY < 1050){
+    if(window.scrollY > 700 && window.scrollY < 1000){
         navWrap.classList.add("navScrolled")
         navWrap.classList.remove("opacity-0")
-    } else if(window.scrollY > 1050){
+    } else if(window.scrollY > 1000){
         navWrap.classList.add("opacity-0")
     } else{
         navWrap.classList.remove("navScrolled")
+        navDropdown.classList.add("navScrolled")
     }
 })

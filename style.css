@@ -46,21 +46,24 @@
 .h1Style{
     font-family: mulish, sans-serif;
     color: rgb(234, 234, 226);
-    font-size: 15vh;
+    font-size: 9vw;
     letter-spacing: 1vw;
     margin: 0px 0px 150px 0px;
 }
 
 .navLinkCustom{
     text-decoration: none;
-    padding: 2vw 2vw;
+    padding: 0px 1vw;
+    font-size: 1.5vw;
+    width: 100%;
 
 }
 
 .navbar{
     border-bottom: 1px solid rgba(247, 206, 175, 0.381);
-    width: 40%;
-    top:2vh;
+    width: 50vw;
+    top:1vw;
+    padding: 0px;
 }
 
 .navLinkCustom:hover{
@@ -68,12 +71,16 @@
 }
 
 .dropdown-menu{
-    background: linear-gradient(180deg, var(--bgColor), var(--bgColor));
+    background-color: var(--bgColor);
+    border: 1px solid rgba(247, 206, 175, 0.381);
+    border-radius: 5px;
+    text-align: center ;
 }
+
 
 .navScrolled{
     backdrop-filter: blur(5px);
-    border : 1px solid var(--accColor);
+    border : 1px solid rgba(247, 206, 175, 0.381);
     border-radius: 5px;
 }
 
@@ -83,12 +90,12 @@
 }
 
 .title2Style{
-    font-size: 11vh;
+    font-size: 5vw;
     margin-left: 2vw;
 }
 
 .subtitle2Style{
-    font-size: 3.5vh;
+    font-size: 1.7vw;
     margin-left: 2vw;
 }
 
@@ -97,17 +104,21 @@
 }
 
 .cardTxtStyle{
-    font-size: 2vh;
+    font-size: 1.2vw;
 }
 
+.title2Custom{
+    font-size: 3vw;
+}
 
 
 .listItemStyle{
     list-style: none;
+    font-size: 1.5vw;
 }
 
 .footerWrap{
-    height: 30vh;
+    height: 15vw;
     background: linear-gradient(180deg, var(--bgColor), rgba(18, 33, 5, 0.6)), url(./media/footerImg.webp);
     background-repeat: no-repeat;
     background-size: cover;
@@ -117,34 +128,34 @@
 .formCustom{
     background-color: rgba(18, 33, 5, 0.42);
     width: 60%;
-    height: 6vh;
+    height: 3vw;
     border: solid 1px var(--accColor);
     padding-left: 10px;
     border-radius: 5px;
     font-family: Quicksand;
     font-weight: 300;
-    font-size: 2vh;
+    font-size: 1vw;
     color: var(--accColor);
 }
 
 .formCustom::placeholder{
     font-family: Quicksand;
     font-weight: 300;
-    font-size: 2vh;
+    font-size: 1vw;
     color: var(--accColor);
     opacity: 40%;
 }
 
 .footerTitleStyle{
-    font-size: 3vh;
+    font-size: 2vw;
 }
 
 .btnStyle{
     background-color: rgba(18, 33, 5, 0.42);
     border: solid 1px var(--accColor);
     border-radius: 5px;
-    padding: 1vh 2vh;
-    font-size: 1.8vh;
+    padding: 0.5vw 1vw;
+    font-size: 0.8vw;
     font-weight: 600;
 }
 

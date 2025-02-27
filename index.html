@@ -6,9 +6,6 @@
     <title>The Tea Market</title>
     <link rel="icon" type="image/x-icon" href="./media/pngegg.png">
 
-    <!-- MY CSS -->
-    <link rel="stylesheet" href="style.css">
-
     <!-- AOS CDN -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
@@ -22,6 +19,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+
+    <!-- MY CSS -->
+    <link rel="stylesheet" href="style.css">
 
   </head>
   
@@ -38,13 +38,13 @@
 
     <!-- NAVBAR -->
 
-    <nav class="navbar navbar-expand-lg position-sticky transition mx-auto my-3" id="navWrap">
+    <nav class="navbar navbar-expand position-sticky transition mx-auto my-3" id="navWrap">
         
         <div class="container-fluid">
             
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             
-                <span class="navbar-toggler-icon d-none"></span>
+                <span class="navbar-toggler-icon"></span>
             
             </button>
           
@@ -70,9 +70,9 @@
                         <a class="navLinkCustom accColor textFont dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                         Our Products </a>
                 
-                        <ul class="dropdown-menu">
+                        <ul class="dropdown-menu p-0">
                             
-                            <li><a class="navLinkCustom accColor textFont" href="#">Green Tea</a></li>
+                            <li><a class="navLinkCustom accColor textFont m-0" href="#">Green Tea</a></li>
                   
                             <li><a class="navLinkCustom accColor textFont" href="#">Black Tea</a></li>
                   
@@ -154,7 +154,7 @@
             <div class="col-3 text-center mt-4" data-aos="fade-in"
             data-aos-duration="2500">
                 
-                <h3 class="accColor titleFont">Black Tea</h3>
+                <h3 class="title2Custom accColor titleFont">Black Tea</h3>
                 
                 <p class="textFont parColor cardTxtStyle">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi vel ullam quasi voluptatibus sed eligendi doloremque sapiente vitae recusandae dolorem.</p>
 
@@ -162,7 +162,7 @@
 
             <div class="col-3 text-center mt-4" data-aos="fade-in" data-aos-duration="2500" data-aos-delay="300">
                 
-                <h3 class="accColor titleFont">Green Tea</h3>
+                <h3 class="title2Custom accColor titleFont">Green Tea</h3>
                 
                 <p class="textFont parColor cardTxtStyle">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi vel ullam quasi voluptatibus sed eligendi doloremque sapiente vitae recusandae dolorem.</p>
             
@@ -170,7 +170,7 @@
 
             <div class="col-3 text-center mt-4" data-aos="fade-in" data-aos-duration="2500" data-aos-delay="600">
                 
-                <h3 class="accColor titleFont">White Tea</h3>
+                <h3 class="title2Custom accColor titleFont">White Tea</h3>
                 
                 <p class="textFont parColor cardTxtStyle">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi vel ullam quasi voluptatibus sed eligendi doloremque sapiente vitae recusandae dolorem.</p>
             
@@ -190,9 +190,9 @@
         
         <div class="col-5 d-flex align-items-center justify-content-center flex-column">
             
-            <h3 class="titleFont titleColor mb-4 footerTitleStyle">OUR CONTACTS</h3>
+            <h3 class="titleFont titleColor mb-lg-4 mb-1 footerTitleStyle">OUR CONTACTS</h3>
             
-            <ul>
+            <ul class="p-0 m-0">
                 
                 <li class="listItemStyle parColor textFont">
                     
@@ -224,7 +224,7 @@
 
         <div class="col-5 d-flex align-items-start justify-content-center flex-column">
             
-            <label for="eMailInput" class="titleFont titleColor mb-4 footerTitleStyle">SUBSCRIBE TO THE NEWSLETTER</label>
+            <label for="eMailInput" class="titleFont titleColor mb-lg-4 mb-1 footerTitleStyle">SUBSCRIBE TO THE NEWSLETTER</label>
             
             <input type="email" placeholder="Enter a valid email address" id="eMailInput" class="formCustom">
             
@@ -244,8 +244,10 @@
     <script>
         AOS.init();
       </script>
+
     <!-- BOOTSTRAP CDN -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
     <!-- MY JAVASCRIPT -->
      <script src="main.js"></script>
 
