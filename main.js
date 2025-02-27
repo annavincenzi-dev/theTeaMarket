@@ -70,5 +70,34 @@ let observer = new IntersectionObserver((entries)=>{
     })
 }
 )
-
 observer.observe(farmsN)
+
+
+
+// SEZIONE NUOVI ARTICOLI
+
+const teas = [
+    {"name": "Matcha", "pic": "", "price": "5,50" },
+    {"name": "Ceylon", "pic": "", "price": "5,50"},
+    {"name": "Oolong", "pic": "./media/oolong.webp", "price": "5,50"},
+    {"name": "Ya Bao", "pic": "./media/yabao.webp", "price": "18,90"},
+    {"name": "Earl Grey", "pic": "./media/earlGrey.webp", "price": "13,40" }
+]
+
+
+let newInWrapper = document.querySelector("#newInWrapper")
+
+
+teas.forEach((tea, i)=>{
+    if(i >= teas.length - 3){
+    let div = document.createElement("div")
+    div.setAttribute("data-aos","fade-in")
+    div.setAttribute("data-aos-duration","2500")
+    div.classList.add("col-2")
+    div.innerHTML = `<img src= "${tea.pic}" class="w-100" alt="">
+                <h3 class="title2Custom titleFont accColor">${tea.name}</h3>
+                <p class="subtitle2Style textFont parColor m-0">$${tea.price}/hg</p>`
+
+    newInWrapper.appendChild(div)   
+    }         
+})

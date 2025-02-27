@@ -111,6 +111,10 @@
     font-size: 3vw;
 }
 
+.img3resize{
+    width:
+}
+
 .numberBg{
     background: linear-gradient(rgba(18, 33, 5, 0.6), rgb(18,33,5, 0.6)), url(./media/leaf_frame.png);
     background-size: contain;
