@@ -25,3 +25,50 @@ window.addEventListener("scroll", ()=>{
         navDropdown.classList.add("navScrolled")
     }
 })
+
+
+//NUMERI CHE CRESCONO
+
+//CATTURO I NUMERI DALL'HTML
+
+let farmsN = document.querySelector("#farms")
+let workersN = document.querySelector("#workers")
+let varietiesN = document.querySelector("#varieties")
+
+
+
+function numberIncrease(finalNum, element, speed) {
+    let counter = 0
+    let interval = setInterval(()=>{
+
+        if(counter < finalNum) {
+            counter++
+            element.innerHTML = counter
+        } else {
+            clearInterval(interval)
+        }
+    
+    
+    }, speed)  
+}
+
+numberIncrease(147, farmsN, 17)
+numberIncrease(2000, workersN, 2)
+numberIncrease(120, varietiesN, 20)
+
+let isStarted = false
+
+let observer = new IntersectionObserver((entries)=>{
+    entries.forEach( (entry)=>{
+        if(entry.isIntersecting && isStarted==false){
+            numberIncrease(147, farmsN, 60)
+            numberIncrease(2000, workersN, 1)
+            numberIncrease(120, varietiesN, 60)
+            isStarted = true
+        }
+ 
+    })
+}
+)
+
+observer.observe(farmsN)
