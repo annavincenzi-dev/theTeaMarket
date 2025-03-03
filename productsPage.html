@@ -70,22 +70,29 @@
 
     <section class="container-fluid vw-100 p-0">
 
-        <div class="row">
+        <div class="row justify-content-around align-items-center text-center filterWrap">
 
             <div class="col-3">
+             <h3 class="productTitleCustom parColor titleFont">Filters</h3>
+            </div>
+
+            <div class="col-3 ">
                 
                 
                 <div class="dropdown">
 
-                    <button class="navLinkCustom accColor textFont m-0 dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false"> Types
+                    <button class="btnFilterCustom parColor textFont dropdown-toggle filterBy" type="button" data-bs-toggle="dropdown" aria-expanded="false"> Types
                       
                     </button>
 
-                    <ul class="dropdown-menu">
+                    <ul class="dropdown-menu filterDropdownCustom" id="btnTypes">
 
-                      <li><a class="dropdown-item" href="#">Black Tea</a></li>
-                      <li><a class="dropdown-item" href="#">Green Tea</a></li>
-                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        <div class="form-check">
+                            <input class="form-check-input mx-1" type="radio" name="flexRadioDefault" id="All" checked>
+                            <label class="form-check-label titleFont parColor" for="flexRadioDefault1">
+                              All
+                            </label>
+                          </div>
                     
                     </ul>
 
@@ -98,10 +105,24 @@
             
             
             
-            <div class="col-3">
+            <div class="col-3 ">
+
+                <div class="dropdown ">
+
+                    <button class="btnFilterCustom parColor textFont dropdown-toggle filterBy" type="button" data-bs-toggle="dropdown" aria-expanded="false"> Price
+                      
+                    </button>
+
+                    <ul class="dropdown-menu filterDropdownCustom">
+                        <label for="customRange2" class=" accColor textFont"></label>
+                        <input type="range" class="rangeCustom" min="" max="" id="customRange">
+                    
+                    </ul>
+
+                  </div>
                 
-                <label for="customRange2" class="form-label"></label>
-                <input type="range" class="rangeCustom" min="" max="" id="customRange">
+                
+                
 
             </div>
 
@@ -110,11 +131,10 @@
 
 
 
-            <div class="col-3">
+            <div class="col-3 filterBy">
 
-                <div class="mb-3">
-                    <input type="text" class="formCustom" id="exampleFormControlInput1" placeholder="Search...">
-                </div>
+                    <input type="text" class="formCustom2" id="exampleFormControlInput1" placeholder="Search...">
+                
 
             </div>
 
@@ -128,7 +148,7 @@
 
             <div class="col-6 col-lg-4" data-aos="fade-in"
             data-aos-duration="2500">
-                <h2 class="titleFont titleColor title2Custom" >OUR TEA</h2>
+                <h2 class="titleFont titleColor title2Custom">OUR TEA</h2>
                 <p class="subtitle2Style textFont parColor m-0">Every leaf has is own story.</p>
             </div>
 
