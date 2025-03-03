@@ -76,6 +76,51 @@ radioButtons.forEach((button)=>{
 
 })
 
+//FINE FILTRO PER CATEGORIA
+
+
+
+
+//FILTRO PER PREZZO CON RANGEBAR
+let priceInput = document.querySelector("#priceRangeInput")
+let priceLabel = document.querySelector("#priceRangeLabel")
+
+let prices = data.map( (element)=> element.price )
+let max = Math.max(...prices)
+let min = Math.min(...prices)
+priceInput.min = min
+priceInput.max = max
+priceInput.value = max
+priceLabel.innerText = `$${min} - $${max}`
+
+function filterByPrice(){
+    let filtered = data.filter( (element)=> element.price <= priceInput.value )
+    createCards(filtered)
+}
+
+
+
+priceInput.addEventListener( "input", ()=>{
+    priceLabel.innerText = `$${min} - $${priceInput.value}`
+    filterByPrice()
+} )
+
+//FINE FILTRO PER PREZZO
+
+//FILTRO PER PAROLA
+
+let inputWord = document.querySelector("#btnSearch")
+
+    function filterByWord(){
+        let filtered = data.filter( (element)=> element.name.toLowerCase().includes(inputWord.value.toLowerCase()) )
+        createCards(filtered)
+    }
+
+    inputWord.addEventListener("input", ()=>{
+        console.log(inputWord.value)
+        filterByWord()
+    })
+
 
 
 })
