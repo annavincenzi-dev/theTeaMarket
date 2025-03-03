@@ -70,12 +70,6 @@
     color: var(--titleColor);
 }
 
-.dropdown-menu{
-    background-color: var(--bgColor);
-    border: 1px solid rgba(247, 206, 175, 0.381);
-    border-radius: 5px;
-    text-align: center ;
-}
 
 
 .navScrolled{
@@ -94,6 +88,10 @@
     margin-left: 2vw;
 }
 
+.productTitleCustom{
+    font-size: 2vw;
+}
+
 .subtitle2Style{
     font-size: 1.7vw;
     margin-left: 2vw;
@@ -109,10 +107,6 @@
 
 .title2Custom{
     font-size: 3vw;
-}
-
-.img3resize{
-    width:
 }
 
 .numberBg{
@@ -181,4 +175,21 @@
     border: solid 1px rgba(18, 33, 5, 0.42);
     color: rgb(18, 33, 5);
     
+}
+
+.rangeCustom{
+    -webkit-appearance: none;
+    appearance: none;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    width: 20vw;
+
+}
+
+.rangeCustom::-webkit-slider-runnable-track{
+    accent-color: var(--accColor);
+    background-color: var(--bgColor);
+    border: 1px var(--accColor) solid;
+    border-radius: 10px;
 }
