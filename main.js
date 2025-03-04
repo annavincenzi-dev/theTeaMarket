@@ -14,7 +14,6 @@ window.addEventListener("scroll", ()=>{
 
 //NAVBAR CHE INTERAGISCE ALLO SCROLL E SPARISCE AL FOOTER
 window.addEventListener("scroll", ()=>{
-    console.log(window.scrollY)
     if(window.scrollY > 700 && window.scrollY < 1000){
         navWrap.classList.add("navScrolled")
         navWrap.classList.remove("opacity-0")
@@ -94,7 +93,7 @@ teas.forEach((tea, i)=>{
     div.setAttribute("data-aos","fade-in")
     div.setAttribute("data-aos-duration","2500")
     div.classList.add("col-2")
-    div.innerHTML = `<img src= "${tea.pic}" class="w-100" alt="">
+    div.innerHTML = `<img src= "${tea.pic}" class="w-100 prodImg" alt="">
                 <h3 class="title2Custom titleFont accColor">${tea.name}</h3>
                 <p class="subtitle2Style textFont parColor m-0">$${tea.price}/hg</p>`
 

@@ -1,5 +1,17 @@
+//EFFETTI NAVBAR 
+let navWrap = document.querySelector("#navWrap")
 
-
+window.addEventListener("scroll", ()=>{
+    if(window.scrollY > 0 && window.scrollY < 2000){
+        navWrap.classList.add("navScrolled")
+        navWrap.classList.remove("opacity-0")
+    } else if(window.scrollY > 2000){
+        navWrap.classList.add("opacity-0")
+    } else{
+        navWrap.classList.remove("navScrolled")
+        navDropdown.classList.add("navScrolled")
+    }
+})
 
 fetch("./products.json").then((r)=>r.json()).then((data)=>{
 
@@ -19,8 +31,9 @@ fetch("./products.json").then((r)=>r.json()).then((data)=>{
         let div = document.createElement("div")
         div.setAttribute("data-aos","fade-in")
         div.setAttribute("data-aos-duration","2500")
-        div.classList.add("col-6", "col-lg-4")
-        div.innerHTML = `<img src= "./media/product.png" class="w-25 m-3 p-0" alt="">
+        div.classList.add("col-6", "col-lg-4", "position-relative")
+        div.innerHTML = `<i class="bi bi-star position-absolute likeIcon"></i>
+                    <img src= "./media/product.png" class="w-25 m-3 p-0 prodImg" alt="">
                     <h3 class="productTitleCustom titleFont accColor">${element.name}</h3>
                     <p class="productSubtitleCustom textFont parColor m-0">$${element.price}/hg, ${element.type}</p>`
     
@@ -28,12 +41,28 @@ fetch("./products.json").then((r)=>r.json()).then((data)=>{
                  
     })
 
-}
+    let stars = document.querySelectorAll(".likeIcon")
 
+
+    let starsArray = Array.from(stars)
+
+    starsArray.forEach((star)=>{
+    
+    star.addEventListener("click", ()=>{
+        star.classList.toggle("bi-star")
+        star.classList.toggle("bi-star-fill")
+    })
+})
+}
 
 createCards(data)
 
+
 // FINE CREAZIONE CARD
+
+//SELEZIONE PREFERITI
+
+
 
 
 //FILTRO PER CATEGORIA
@@ -43,23 +72,23 @@ let types = Array.from(new Set(allTypes))
 types.forEach((type)=>{
     let div = document.createElement("div")
     div.classList.add("form-check")
-    div.innerHTML = `<input class="form-check-input mx-1" type="radio" name="flexRadioDefault"           id="${type}" checked>
+    div.innerHTML = `<input class="form-check-input mx-1" type="radio" name="flexRadioDefault"           id="${type}">
     <label class="form-check-label titleFont parColor" for="${type}">${type}</label>`
     btnTypes.appendChild(div)
 })
 
 let radioButtons = document.querySelectorAll(".form-check-input")
 
-function filterByCategory(){
+function filterByCategory(array){
     let nodeToArray = Array.from(radioButtons) //trasformo il node in un array
 
     let foundChecked = nodeToArray.find((button)=> button.checked == true)
     
         if(foundChecked.id == "All"){
-        createCards(data)
+        return array
     }     else     {
         let filtered = data.filter((element) => element.type == foundChecked.id)
-        createCards(filtered)
+        return filtered
 }}
 
 
@@ -69,8 +98,10 @@ function filterByCategory(){
 radioButtons.forEach((button)=>{
 
     button.addEventListener("input", ()=>{
-        filterByCategory()
+        globalFilter()
     })
+
+
 
 
 
@@ -93,16 +124,16 @@ priceInput.max = max
 priceInput.value = max
 priceLabel.innerText = `$${min} - $${max}`
 
-function filterByPrice(){
-    let filtered = data.filter( (element)=> element.price <= priceInput.value )
-    createCards(filtered)
+function filterByPrice(array){
+    let filtered = array.filter( (element)=> element.price <= priceInput.value )
+    return filtered
 }
 
 
 
 priceInput.addEventListener( "input", ()=>{
     priceLabel.innerText = `$${min} - $${priceInput.value}`
-    filterByPrice()
+    globalFilter()
 } )
 
 //FINE FILTRO PER PREZZO
@@ -111,16 +142,28 @@ priceInput.addEventListener( "input", ()=>{
 
 let inputWord = document.querySelector("#btnSearch")
 
-    function filterByWord(){
-        let filtered = data.filter( (element)=> element.name.toLowerCase().includes(inputWord.value.toLowerCase()) )
-        createCards(filtered)
+    function filterByWord(array){
+        let filtered = array.filter( (element)=> element.name.toLowerCase().includes(inputWord.value.toLowerCase()) )
+        return filtered
     }
 
     inputWord.addEventListener("input", ()=>{
-        console.log(inputWord.value)
-        filterByWord()
+        globalFilter()
     })
 
 
 
+
+    //GLOBAL FILTER
+
+    function globalFilter(){
+        let filteredByType = filterByCategory(data)
+        let filteredByPrice = filterByPrice(filteredByType)
+        let filteredByName = filterByWord(filteredByPrice)
+        createCards(filteredByName)
+    }
+
+    
 })
+
+

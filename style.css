@@ -243,3 +243,14 @@
     border: 1px solid var(--accColor);
     border-radius: 5px;
 }
+
+.prodImg:hover{
+    transform: scale(1.2);
+    transition: 1.2s;
+    cursor: pointer;
+}
+
+.likeIcon{
+    color: white;
+    top: 2vw;
+}
