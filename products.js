@@ -69,7 +69,7 @@ createCards(data)
 let btnTypes = document.querySelector("#btnTypes")
 let allTypes = data.map((element)=> element.type)
 let types = Array.from(new Set(allTypes))
-types.forEach((type)=>{
+types.sort().forEach((type)=>{
     let div = document.createElement("div")
     div.classList.add("form-check")
     div.innerHTML = `<input class="form-check-input mx-1" type="radio" name="flexRadioDefault"           id="${type}">
@@ -143,7 +143,7 @@ priceInput.addEventListener( "input", ()=>{
 let inputWord = document.querySelector("#btnSearch")
 
     function filterByWord(array){
-        let filtered = array.filter( (element)=> element.name.toLowerCase().includes(inputWord.value.toLowerCase()) )
+        let filtered = array.sort((a, b) => a.price - b.price).filter( (element)=> element.name.toLowerCase().includes(inputWord.value.toLowerCase()) )
         return filtered
     }
 
