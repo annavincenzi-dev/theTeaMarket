@@ -1,5 +1,3 @@
-Progetto finale del percorso relativo al front end di Anna Vincenzi.
-
 
 FONT UTILIZZATI:
 MULISH (titoli), QUICKSAND (paragrafi)
@@ -16,8 +14,6 @@ testo paragrafi: rgba(234, 234, 226, 0.59)
 
 testo sottititoli/ colore accento: rgb(247,206,175)
 
-
-DA FARE : BUTTON KEEP ME UPDATED
 
 
 
