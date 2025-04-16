@@ -3,6 +3,8 @@
 
 Benvenuti in **The Tea Market**, un progetto front-end che ho sviluppato con passione per rappresentare un mercato online di tè. Questo sito web responsive offre un'esperienza utente moderna e coinvolgente, grazie all'utilizzo di tecnologie come HTML, CSS, JavaScript, Bootstrap e AOS.
 
+Per poterne esplorare tutte le funzionalità direttamente dal browser, il progetto è disponibile anche online tramite GitHub Pages, a [QUESTO LINK](https://annavincenzi-dev.github.io/theTeaMarket/).
+
 
 ## Obiettivo del Progetto
 L'obiettivo principale era creare un'interfaccia utente intuitiva e visivamente accattivante per un e-commerce di tè. Il sito include animazioni dinamiche, una barra di navigazione interattiva, sezioni di prodotto con immagini cliccabili e un modulo di iscrizione alla newsletter. Tutto è stato progettato per garantire un layout moderno e funzionale ad una possibile futura implementazione della parte back-end.
