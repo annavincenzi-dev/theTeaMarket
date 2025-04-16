@@ -22,7 +22,7 @@ L'obiettivo principale era creare un'interfaccia utente intuitiva e visivamente 
 Il progetto è organizzato nei seguenti file:
 
 - **index.html**: La homepage del sito, che presenta l'introduzione con un'immagine evocativa, le sezioni dei prodotti, le informazioni principali e le categorie, il tutto reso accattivante e professionale dalle animazioni fatte con JavaScript.
-[Heading della homepage](media/previews/HeadingPrev.png)
+![Heading della homepage](media/previews/HeadingPrev.png)
 
 - **productsPage.html**: Una pagina dedicata alla visualizzazione dettagliata dei prodotti disponibili, ognuno dei quali ha un'icona placeholder, un nome ed un prezzo. L'utente ha la possibilità di interagire con l'elenco dei prodotti impostando dei filtri e aggiungendo una stellina per selezionarli tra i preferiti. I prodotti presenti sono inseriti attraverso la logica presente nel file *products.js*.
 [Pagina prodotti con filtri](media/previews/productsPrev.png)
