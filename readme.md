@@ -25,18 +25,18 @@ Il progetto è organizzato nei seguenti file:
 ![Heading della homepage](media/previews/HeadingPrev.png)
 
 - **productsPage.html**: Una pagina dedicata alla visualizzazione dettagliata dei prodotti disponibili, ognuno dei quali ha un'icona placeholder, un nome ed un prezzo. L'utente ha la possibilità di interagire con l'elenco dei prodotti impostando dei filtri e aggiungendo una stellina per selezionarli tra i preferiti. I prodotti presenti sono inseriti attraverso la logica presente nel file *products.js*.
-[Pagina prodotti con filtri](media/previews/productsPrev.png)
+![Pagina prodotti con filtri](media/previews/productsPrev.png)
 
 - **style.css**: Il file CSS che definisce lo stile del sito, inclusi colori, font e layout responsivo.
-[Sezione con i numeri dell'azienda e footer](media/previews/numbersPrev.png)
+![Sezione con i numeri dell'azienda e footer](media/previews/numbersPrev.png)
 
 - **main.js**: Il file JavaScript principale che gestisce l'interattività del sito, come la navigazione e le animazioni. Ecco le funzionalità principali: 
     - Rotazione dell'immagine della foglia si attiva con lo scroll, creando un effetto visivo dinamico.
-    [Gif fogliolina che ruota](media/previews/leaf.gif)
+    ![Gif fogliolina che ruota](media/previews/leaf.gif)
 
     - Navbar cambia comportamento al variare dello scroll: appare o scompare a seconda della posizione della pagina. 
     - Animazione per il conteggio progressivo di numeri, come fattorie, lavoratori e varietà, che inizia solo quando l'elemento entra nella vista del browser. 
-    [Gif animazione dei numeri](media/previews/numbers.gif)
+    ![Gif animazione dei numeri](media/previews/numbers.gif)
 
     - Sezione "Nuovi Articoli" che mostra i tè più recenti, aggiungendoli dinamicamente con immagini e prezzi. 
 Questi effetti combinano animazioni fluide e interazioni utili per un sito moderno e coinvolgente. 
