@@ -129,7 +129,7 @@
 }
 
 .footerWrap{
-    height: 15vw;
+/*     height: 15vw; */
     background: linear-gradient(180deg, var(--bgColor), rgba(18, 33, 5, 0.6)), url(./media/footerImg.webp);
     background-repeat: no-repeat;
     background-size: cover;
@@ -253,4 +253,51 @@
 .likeIcon{
     color: white;
     top: 2vw;
+}
+
+@media screen and (max-width: 768px) {
+    .title2Style{
+        font-size: 5.5vw;
+        margin-left: 2vw;
+        margin-top: 5vw; 
+    }
+
+    .subtitle2Style{    
+        font-size: 3.5vw;
+        margin-left: 2vw;
+   
+    }
+
+    .textFont{
+        font-size: 2.5vw;
+    }
+
+    .titleFont{
+        font-size: 3.2vw;
+    }
+
+    .numberBg{
+        width: 40vw;
+        height: 40vw;    
+    }
+
+    .numberBg h2{
+        font-size: 10vw;
+    }
+
+    .numberBg p{
+        font-size: 3.5vw;
+        backdrop-filter: blur(2px);
+    }
+
+    .formCustom{
+        width: 80%;
+        height: 4vw;
+
+    }
+
+    .sectionContainer{ 
+        height: fit-content;
+    }
+
 }

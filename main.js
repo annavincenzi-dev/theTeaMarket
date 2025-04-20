@@ -14,10 +14,10 @@ window.addEventListener("scroll", ()=>{
 
 //NAVBAR CHE INTERAGISCE ALLO SCROLL E SPARISCE AL FOOTER
 window.addEventListener("scroll", ()=>{
-    if(window.scrollY > 700 && window.scrollY < 1000){
+    if(window.scrollY > 700 && window.scrollY < 1800){
         navWrap.classList.add("navScrolled")
         navWrap.classList.remove("opacity-0")
-    } else if(window.scrollY > 1000){
+    } else if(window.scrollY > 1800){
         navWrap.classList.add("opacity-0")
     } else{
         navWrap.classList.remove("navScrolled")
@@ -92,7 +92,7 @@ teas.forEach((tea, i)=>{
     let div = document.createElement("div")
     div.setAttribute("data-aos","fade-in")
     div.setAttribute("data-aos-duration","2500")
-    div.classList.add("col-2")
+    div.classList.add("col-3")
     div.innerHTML = `<img src= "${tea.pic}" class="w-100 prodImg" alt="">
                 <h3 class="title2Custom titleFont accColor">${tea.name}</h3>
                 <p class="subtitle2Style textFont parColor m-0">$${tea.price}/hg</p>`
