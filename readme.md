@@ -61,7 +61,7 @@ Per il design, ho scelto una combinazione di colori che trasmette eleganza e nat
 - **Testo paragrafi**: rgba(234, 234, 226, 0.59)
 - **Colore accento**: rgb(247,206,175)
 
-I font utilizzati sno:
+I font utilizzati sono:
 - **Mulish** per i titoli
 - **Quicksand** per i paragafi
 
@@ -70,7 +70,7 @@ Queste scelte contribuiscono a creare un'esperienza visiva coerente e piacevole 
 
 
 
-## In Conclusone..
+## In Conclusione..
 
 Questo progetto rappresenta un passo significativo nel mio percorso come sviluppatrice full-stack. Attraverso **The Tea Market**, ho potuto approfondire le mie competenze in sviluppo web, design responsivo e interattività. Sono entusiasta di continuare a crescere professionalmente e di contribuire con la mia passione e dedizione a progetti innovativi.
 

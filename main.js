@@ -80,7 +80,7 @@ const teas = [
     {"name": "Ceylon", "pic": "", "price": "5,50"},
     {"name": "Oolong", "pic": "./media/oolong.webp", "price": "5,50"},
     {"name": "Ya Bao", "pic": "./media/yabao.webp", "price": "18,90"},
-    {"name": "Earl Grey", "pic": "./media/earlGrey.webp", "price": "13,40" }
+    {"name": "Earl Grey", "pic": "./media/earlgrey.webp", "price": "13,40" }
 ]
 
 
